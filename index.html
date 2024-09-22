@@ -1,152 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mphatso Mphepo Portfolio</title>
-    <link rel="stylesheet" href="portfolio/css/style.css">
-    <link rel="icon" href="favicon.ico">
-</head>
-<body>
-    <header>
-        <h1>Mphatso Mphepo</h1>
-        <p>Information Systems Specialist</p>
-    </header>
-    <nav>
-        <ul>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mphatso Mphepo</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mphatso Mphepo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Mphatso Profile.png" alt="Mphatso Mphepo profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mphatso Mphepo</h1>
+        <p class="section__text__p2">Strategic Manager</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/mphatsomphepocv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mphatso-mphepo'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/mphatsomphepo1'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Software Engineering <br /> Web Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Information Systems<br />Seeds for the Future Alumni</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                An Information Systems professional with a BSc from the University of Malawi, 
+                specializing in Strategic Management, Software Engineering, and data analytics. 
+                Led data-driven projects with Zindi and Creative Solutions for the Environment, 
+                focusing on technology for development aligning with Malawi 2063 Vision and Sustainable Development Goals.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Experiences</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Software Engineering</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Project Management</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Experiences</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SpringBoot</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project12345.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Farm Records Management System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mphatsomphepo1/FarmRecordsManagementSystem'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mphatsomphepo1/FarmRecordsManagementSystem'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project123.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Online Campus Management System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mphatsomphepo1/OnlineMaintenanceManagementSystem'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mphatsomphepo1/OnlineMaintenanceManagementSystem'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mphatsomphepo829@gmail.com">Email Mphatso Mphepo</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mphatso-mphepo">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a diligent, mature, and intelligent professional with high-level adaptive and fast learning skills. I excel at ensuring all targets set for deliverables are met within specifications and quality standards. I demonstrate unyielding excellence in teamwork, people management, and interpersonal skills.</p>
-            <h3>Skills</h3>
-            <ul>
-                <li>Time management</li>
-                <li>DHSI2 and PowerBI</li>
-                <li>Excellent written and oral communication skills</li>
-                <li>Project Management</li>
-                <li>People Management</li>
-                <li>Android Application Development: Flutter, Kotlin, and Java</li>
-                <li>Website Development: HTML, CSS, JS, PostgreSQL, Firebase, SQLite, SpringBoot</li>
-                <li>Artificial Intelligence</li>
-                <li>Finance Foundations: Corporate Governance</li>
-                <li>Professional Ethics</li>
-            </ul>
-        </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Ambassador for Malawi</h3>
-                <p>Zindi – Remote</p>
-                <p>10/2023 to Current</p>
-            </div>
-            <div class="experience-item">
-                <h3>ICT and Marketing Officer (INTERN)</h3>
-                <p>Creative Solutions For the Environment – Lilongwe, Malawi</p>
-                <p>04/2022 to 12/2024</p>
-                <ul>
-                    <li>Coordinated innovative strategies to accomplish marketing objectives and boost long-term profitability.</li>
-                    <li>Led creative brainstorming sessions that resulted in innovative ideas for promotional projects.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Student Ambassador Volunteer</h3>
-                <p>Maphunziro265 – Zomba, Malawi</p>
-                <p>09/2019 to Current</p>
-                <ul>
-                    <li>Assisted with the planning and execution of special events, ensuring a positive experience for all attendees.</li>
-                    <li>Provided valuable input for improving campus life, participating in regular meetings with university administrators.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Publicity Secretary for Computing Society</h3>
-                <p>Computing Society – University of Malawi, Zomba, Malawi</p>
-                <p>19/2023 to Current</p>
-                <ul>
-                    <li>Assisted with the planning and execution of special events and communicating to students in real time regarding matters of the society.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Programs Director</h3>
-                <p>Worship Quake – University of Malawi, Zomba, Malawi</p>
-                <p>01/2023 to Current</p>
-                <ul>
-                    <li>Organizing Worship Quake events on campus and making sure that everything is in order for smooth running of the event.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Class Representative</h3>
-                <p>Information Systems – University of Malawi, Zomba, Malawi</p>
-                <p>09/2019 to Current</p>
-                <ul>
-                    <li>Communicating with lecturers, organizing classes, and making sure that students' needs are being communicated to the relevant authorities on campus.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Fundraising Director</h3>
-                <p>Malawi Assemblies of God Homecell – University of Malawi, Zomba, Malawi</p>
-                <p>04/2021 to 03/2023</p>
-                <ul>
-                    <li>Organized events such as Finale Dinner, First Year Welcoming Functions and ensured that all funds and resources were available.</li>
-                </ul>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Check out my projects on <a href="https://github.com/bsc-inf-20-19" target="_blank">GitHub</a>.</p>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Bachelor of Science in Information Systems</h3>
-                <p>University of Malawi – Zomba, Malawi</p>
-                <p>Graduation: December 2024</p>
-            </div>
-        </section>
-        <section id="achievements">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Dean’s List for Academic Excellence – University of Malawi (2022)</li>
-                <li>Winner, National ICT Innovation Challenge (2023)</li>
-                <li>Certified in Data Science and Machine Learning – Coursera (2021)</li>
-            </ul>
-        </section>
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Certified in Data Science and Machine Learning – Coursera</li>
-                <li>Certified Professional in Project Management (CPPM)</li>
-                <li>Certified Ethical Hacker (CEH)</li>
-            </ul>
-        </section>
-        <section id="testimonials">
-            <h2>Testimonials</h2>
-            <div class="testimonial-item">
-                <p>"Mphatso's dedication and technical skills have been instrumental in our project’s success. He is a quick learner and always willing to go the extra mile." – Jane Doe, Project Manager at XYZ</p>
-            </div>
-            <div class="testimonial-item">
-                <p>"Mphatso is an excellent team player who consistently delivers high-quality work. His innovative ideas have significantly contributed to our company." – John Smith, CEO of ABC</p>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:mphatsomphepo829@gmail.com">mphatsomphepo829@gmail.com</a></p>
-            <p>Phone: 0998686063 / 0885081840</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/mphatso-mphepo-36b222236" target="_blank">Mphatso Mphepo</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Mphatso Mphepo. All rights reserved.</p>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Mphatso Mphepo. All Rights Reserved.</p>
     </footer>
-    <script src="portfolio/js/scripts.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
