@@ -11,6 +11,7 @@ import Achievements from './components/Achievements'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   const [isVisible, setIsVisible] = useState({})
@@ -35,7 +36,7 @@ function App() {
   }, [])
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 relative">
       <Navbar />
       <Hero isVisible={isVisible.hero} />
       <About isVisible={isVisible.about} />
@@ -48,6 +49,7 @@ function App() {
       <Testimonials isVisible={isVisible.testimonials} />
       <Contact isVisible={isVisible.contact} />
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }
